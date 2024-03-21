@@ -1,0 +1,29 @@
+{
+	"name": "Python",
+	"image": "mcr.microsoft.com/devcontainers/python:1-3.12-bookworm",
+	"customizations": {
+		"vscode": {
+			"settings": {
+				"liveshare.allowGuestDebugControl": true,
+				"liveshare.allowGuestTaskControl": true,
+				"liveshare.languages.allowGuestCommandControl": true,
+				"liveshare.publishWorkspaceInfo": true,
+				"python": {
+					"editor.defaultFormatter": "ms-python.black-formatter"
+				  },
+				"python.languageServer": "Pylance",
+				"extensions.ignoreRecommendations": true,
+				"workbench.startupEditor": "readme"
+			},
+			"extensions": [
+				"ms-vsliveshare.vsliveshare",
+				"ms-python.python",
+				"ms-python.vscode-pylance",
+				"ms-python.black-formatter",
+				"ms-python.pylint",
+				"ms-python.mypy-type-checker",
+				"matangover.mypy"
+			]
+		}
+	}
+}
